@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf8tt20jn7543"]
+
+[ext_resource type="Texture2D" uid="uid://dk8w7gm1jfjwl" path="res://data/trees/tronco_marron.png" id="1_ylum6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a2bqv"]
+radius = 13.0
+height = 26.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2(243, 141)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, -1)
+texture = ExtResource("1_ylum6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 0)
+shape = SubResource("CapsuleShape2D_a2bqv")
